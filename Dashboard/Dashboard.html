@@ -9,41 +9,92 @@
 </head>
 <body class="bg-light d-flex flex-column min-vh-100">
     <div class="flex-grow-1">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
-            <div class="container">
-                <a class="fa-solid fa-rocket me-2 text-info">
-                    Team NASA
-                </a>
+        
+        <main class="container py-4">
 
-                <ul class="navbar-nav ms-auto">
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="dahboard.html">
-                            Dashboard
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            Somewhere
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            I think so
-                        </a>
-                    </li>
-
-                    <li class="nav-item btn btn-danger">
-                        <a class="nav-link" href="login.html">
-                            Login/Logout
-                        </a>
-                    </li>
-
-                </ul>
+            <!-- Header -->
+            <div class="row align-items-end mb-3">
+                <div class="col-md-8">
+                <h1 class="display-6 fw-bold text-dark">Faculty Dashboard</h1>
+                <p class="text-muted">Manage your class activities</p>
+                </div>
             </div>
-        </nav>
+
+            <!-- Welcome -->
+            <div class="text-center mb-4">
+                <h4>Welcome, Faculty Member(name)</h4>
+                <p class="text-muted small">This is your dashboard.</p>
+            </div>
+
+            <!-- Quick Actions Header -->
+            <div class="card shadow-sm mb-4">
+                <div class="card-body fw-semibold">
+                Quick Actions
+                </div>
+            </div>
+
+            <!-- Action Cards -->
+            <div class="row g-4">
+
+                <!-- Log Class -->
+                <div class="col-md-3">
+                    <div class="card h-100 shadow-sm border-0 text-center">
+                        <div class="card-body p-4">
+                        <div class="display-4 text-primary mb-3">
+                            <i class="fa-regular fa-pen-to-square"></i>
+                        </div>
+                        <h5 class="fw-semibold">Log Class</h5>
+                        <p class="text-muted small mb-3">Enter class activity logs</p>
+                        <a href="#" class="btn btn-primary w-100 py-2">Log Hours</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Log History -->
+                <div class="col-md-3">
+                    <div class="card h-100 shadow-sm border-0 text-center">
+                        <div class="card-body p-4">
+                        <div class="display-4 text-warning mb-3">
+                            <i class="fa-solid fa-list"></i>
+                        </div>
+                        <h5 class="fw-semibold">Log History</h5>
+                        <p class="text-muted small mb-3">View your past entries</p>
+                        <a href="#" class="btn btn-warning text-white w-100 py-2">View Logs</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Admin Panel -->
+                <div class="col-md-3">
+                    <div class="card h-100 shadow-sm border-0 text-center">
+                        <div class="card-body p-4">
+                        <div class="display-4 text-dark mb-3">
+                            <i class="fa-solid fa-user-shield"></i>
+                        </div>
+                        <h5 class="fw-semibold">Admin Panel</h5>
+                        <p class="text-muted small mb-3">Manage faculty & logs</p>
+                        <a href="../Admin_Dashboard/Admin_Dashboard.html" class="btn btn-dark w-100 py-2">Enter Admin Panel</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Profile -->
+                <div class="col-md-3">
+                    <div class="card h-100 shadow-sm border-0 text-center">
+                        <div class="card-body p-4">
+                        <div class="display-4 text-secondary mb-3">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <h5 class="fw-semibold">Profile</h5>
+                        <p class="text-muted small mb-3">Coming soon</p>
+                        <button class="btn btn-secondary w-100 py-2" disabled>
+                            Maybe Removed(No use Found Remove from Design)
+                        </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
